@@ -1,0 +1,12 @@
+entity Office{
+officeName String
+openingDate LocalDate
+externalId String
+}
+//  office can have multiple child offices.
+relationship ManyToOne{
+Office{parent} to Office{child}
+}
+dto * with mapstruct
+service all with serviceImpl
+paginate Office with pagination
