@@ -40,9 +40,9 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:file:./build/h2db/db/organisation;DB_CLOSE_DELAY=-1
-    username: organisation
-    password:
+    url: jdbc:postgresql://database-1.coq1gxtnqmfx.ap-south-1.rds.amazonaws.com:5432/notification
+    username: PostgreDB
+    password: AlphaNext#2023
     hikari:
       poolName: Hikari
       auto-commit: false

@@ -1,0 +1,43 @@
+{
+  "applications": "*",
+  "changelogDate": "20231011100221",
+  "clientRootFolder": "organisation",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "entityTableName": "office",
+  "fields": [
+    {
+      "fieldName": "officeName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "openingDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "externalId",
+      "fieldType": "String"
+    }
+  ],
+  "microserviceName": "organisation",
+  "name": "Office",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "office",
+      "otherEntityRelationshipName": "child",
+      "relationshipName": "parent",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "office",
+      "otherEntityRelationshipName": "parent",
+      "relationshipName": "child",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
