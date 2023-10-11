@@ -41,7 +41,7 @@ public class Office implements Serializable {
     private Set<Office> children = new HashSet<>();
 
     // jhipster-needle-entity-add-field - JHipster will add fields here
-
+    //add
     public Long getId() {
         return this.id;
     }
